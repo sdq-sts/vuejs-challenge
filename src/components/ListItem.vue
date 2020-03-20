@@ -1,11 +1,20 @@
 <template>
   <q-item clickable v-ripple class="bg-grey-3">
+    <q-item-section side>
+      {{ itemId + 1 }}
+    </q-item-section>
+
     <q-item-section>
       {{ content }}
     </q-item-section>
 
     <q-item-section side>
-      <span>2 min ago</span>
+      <q-btn
+        icon="delete"
+        size="sm"
+        round
+        @click="deleteItem"
+      />
     </q-item-section>
   </q-item>
 </template>
@@ -15,6 +24,15 @@
     props: {
       content: {
         type: String
+      },
+      itemId: {
+        type: Number
+      }
+    },
+
+    methods: {
+      deleteItem () {
+        this.$emit('deleteItem', this.itemId)
       }
     }
   }

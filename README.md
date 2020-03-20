@@ -1,24 +1,26 @@
-# talentify-test
+# Talentify vue test
 
-## Project setup
+O resultado pode ser encontrado [neste link](https://talentify-vue-test.netlify.com/)
+
+
+## Executando localmente
+
+Caso seja necessário executar online, clone o repositório:
+
+```bash
+git clone https://github.com/sdq-sts/vuejs-challenge
 ```
+
+Depois de acessar a pasta, instale as dependências com:
+
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+Inicie o servidor com o comando:
+
+```bash
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+E acesse ``http://localhost:8080/.
